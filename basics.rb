@@ -34,16 +34,16 @@ puts 6 == 1000 / (300 / 2)
 msg = "hEllO"
 
 print "11. "
-puts msg == "HELLO"
+puts msg.upcase == "HELLO"
 
 print "12. "
-puts msg == "HeLLo"
+puts msg.swapcase == "HeLLo"
 
 print "13. "
-puts msg == "OllEh"
+puts msg.reverse == "OllEh"
 
 print "13a. "
-puts msg == "OLLEH"
+puts msg.upcase.reverse == "OLLEH"
 
 arr = ['a', 'b', 'c']
 
@@ -54,21 +54,21 @@ print "15. "
 puts 3 == arr.count
 
 print "16. "
-puts arr.toString == 'a,b,c'
+puts arr.join(",") == 'a,b,c'
 
 #Hint: This will take 2 method calls
 print "17. "
-puts arr == 'C'
+puts arr[2].upcase == 'C'
 
 hsh = { name: 'Fido', age: '99' }
 print "18. "
-puts  hsh == 'Fido'
+puts  hsh[:name] == 'Fido'
 
 print "19. "
-puts hsh == [:name, :age]
+puts hsh['Fido' '99'] == [:name, :age]
 
 print "20. "
-puts hsh == ['Fido', '99']
+puts hsh[:name] + hsh[:age] == ['Fido', '99']
 
 print "21. "
 puts hsh == { name: 'Fido', age: '99', special: 'Dog' }
