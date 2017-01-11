@@ -65,10 +65,10 @@ print "18. "
 puts  hsh[:name] == 'Fido'
 
 print "19. "
-puts hsh['Fido' '99'] == [:name, :age]
+puts hsh.keys == [:name, :age]
 
 print "20. "
-puts hsh[:name] + hsh[:age] == ['Fido', '99']
+puts hsh.values == ['Fido', '99']
 
 print "21. "
-puts hsh == { name: 'Fido', age: '99', special: 'Dog' }
+puts hsh.merge!(special: 'Dog') == { name: 'Fido', age: '99', special: 'Dog' }
